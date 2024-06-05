@@ -7,7 +7,8 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-th-fragment="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+	<img alt="Facultad" src="https://fi.unju.edu.ar/images/fi-logo.png">
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,44 +46,112 @@
 </nav>
   	
   	<div data-th-fragment="paginacion">
-	  <footer class="bg-dark text-white py-5">
+  	<footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <h5>Redes Sociales</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Facebook</a></li>
-            <li><a href="#" class="text-white">Twitter</a></li>
-            <li><a href="#" class="text-white">Instagram</a></li>
-            <li><a href="#" class="text-white">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/fiunju/" class="text-white">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A" class="text-white">YouTube</a></li>
+            <li><a href="https://www.instagram.com/fiunju/" class="text-white">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju" class="text-white">LinkedIn</a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5>Contacto</h5>
-          <p class="text-muted">Teléfono: 123-456-7890</p>
-          <p class="text-muted">Email: info@example.com</p>
+          <p class="text-white"><a href="https://www.fi.unju.edu.ar/servicios/telefonos.html" class="text-white">Teléfono</a></p>
+          <p class="text-white">Email: <a href="info@fi.unju.edu.ar" class="text-white">info@fi.unju.edu.ar</a></p>
         </div>
         <div class="col-md-4">
           <h5>Dirección</h5>
-          <p class="text-muted">123 Calle Principal</p>
-          <p class="text-muted">Ciudad, País</p>
+          <p class="text-white">Ítalo Palanca Nº 10</p>
+          <p class="text-white">San Salvador de JujuyJujuy - Argentina</p>
+          <p class="text-white">Jujuy - Argentina</p>
         </div>
       </div>
     </div>
   </footer>
-  	</div>
+</div>
+
+<div class="col-md-6">
+        <div class="table" data-th-fragment="table">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-sm-6">
+                        <h2 class="mt-5 text-right pr-4">Fechas de Inscripción (A partir del 27/05/24):</h2>
+                        <table class="table mt-4 table-sm">
+                            <thead class="thead-dark">
+            <tr>
+              <th scope="col" class="small">SEMANA</th>
+              <th scope="col" class="small">FECHA DE EXÁMENES</th>
+              <th scope="col" class="small">VENCIMIENTO DE INSCRIPCIONES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5" class="small">1° SEMANA</td>
+              <td class="small">1° DIA: 03/06/2024</td>
+              <td class="small">29/05/2024</td>
+            </tr>
+            <tr>
+              <td class="small">2° DIA: 04/06/2024</td>
+              <td class="small">30/05/2024</td>
+            </tr>
+            <tr>
+              <td class="small">3° DIA: 05/06/2024</td>
+              <td class="small">31/05/2024</td>
+            </tr>
+            <tr>
+              <td class="small">4° DIA: 06/06/2024</td>
+              <td class="small">03/06/2024</td>
+            </tr>
+            <tr>
+              <td class="small">5° DIA: 07/06/2024</td>
+              <td class="small">04/06/2024</td>
+            </tr>
+            <tr>
+              <td rowspan="5" class="small">2° SEMANA</td>
+              <td class="small">6° DÍA: 10/06/2024</td>
+              <td class="small">05/06/2024</td>
+            </tr>
+            <tr>
+              <td class="small">7° DÍA: 11/06/2024</td>
+              <td class="small">06/06/2024</td>
+            </tr>
+            <tr>
+              <td class="small">8° DÍA: 12/06/2024</td>
+              <td class="small">07/06/2024</td>
+            </tr>
+            <tr>
+              <td class="small">9° DÍA: 13/06/2024</td>
+              <td class="small">10/06/2024</td>
+            </tr>
+            <tr>
+              <td class="small">10° DÍA: 14/06/2024</td>
+              <td class="small">11/06/2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
   	
  <div class="row" data-th-fragment="aside">
-  	<aside class="col-md-3 bg-light p-4">
-        <h2 class="border-bottom pb-3">Aside</h2>
-        <p class="text-muted">Texto de ejemplo para el aside.</p>
+    <div class="col-md-6">
+        <aside class="bg-light p-4 sidebar">
+            <h2 class="border-bottom pb-3">Aside</h2>
+            <p class="text-muted">AYUDA</p>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-primary">Enlace 1</a></li>
-          <li><a href="#" class="text-primary">Enlace 2</a></li>
-          <li><a href="#" class="text-primary">Enlace 3</a></li>
+          <p>03 al 14 de junio/24 | 2do Turno Ordinario de Exámenes - 2024</p>
+          <p>15 al 26 de julio/24 | Receso Invernal</p>
+          <p>29 de julio/24 al 09 de agosto/24 | 3er Turno Ordinario de Exámenes - 2024</p>
+          <li><a href="https://www.youtube.com/watch?v=Zu5EWDzS_Oo&embeds_referring_euri=https%3A%2F%2Fwww.fi.unju.edu.ar%2F&source_ve_path=Mjg2NjY&feature=emb_logo" class="text-primary">Egresados</a></li>
         </ul>
       </aside>
-  
+     </div>
 </div>
 </body>
 </html>
