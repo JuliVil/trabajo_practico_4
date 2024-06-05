@@ -5,15 +5,84 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<nav class="navbar" data-th-fragments="navbar">
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo">Logo</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">Sass</a></li>
-	        <li><a href="badges.html">Components</a></li>
-	        <li><a href="collapsible.html">JavaScript</a></li>
-	      </ul>
-	    </div>
-  	</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-th-fragment="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Carreras
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://fi.unju.edu.ar/perfil-y-alcance-analista-programador-universitario.html">APU</a></li>
+            <li><a class="dropdown-item" href="https://fi.unju.edu.ar/perfil-y-alcance-ing-quimica">INGENIERÍA QUÍMICA</a></li>
+            <li><a class="dropdown-item" href="https://fi.unju.edu.ar/perfil-y-alcance-ing-de-minas.html">INGENIERÍA DE MINAS</a></li>
+            <li><a class="dropdown-item" href="https://fi.unju.edu.ar/perfil-y-alcance-ing-informatica.html">INGENIERÍA INFORMÁTICA</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.fi.unju.edu.ar/carreras/carreras-de-grado.html">Otras</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  	
+  	<div data-th-fragment="paginacion">
+	  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Facebook</a></li>
+            <li><a href="#" class="text-white">Twitter</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+            <li><a href="#" class="text-white">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p class="text-muted">Teléfono: 123-456-7890</p>
+          <p class="text-muted">Email: info@example.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dirección</h5>
+          <p class="text-muted">123 Calle Principal</p>
+          <p class="text-muted">Ciudad, País</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  	</div>
+  	
+ <div class="row" data-th-fragment="aside">
+  	<aside class="col-md-3 bg-light p-4">
+        <h2 class="border-bottom pb-3">Aside</h2>
+        <p class="text-muted">Texto de ejemplo para el aside.</p>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-primary">Enlace 1</a></li>
+          <li><a href="#" class="text-primary">Enlace 2</a></li>
+          <li><a href="#" class="text-primary">Enlace 3</a></li>
+        </ul>
+      </aside>
+  
+</div>
 </body>
 </html>
