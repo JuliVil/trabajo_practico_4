@@ -1,14 +1,14 @@
 package ar.edu.unju.fi.model;
 
 public class Docente {
-	private int legajo;
+	private String legajo;
 	private String nombre;
 	private String apellido;
 	private String email;
-	private int telefono;
+	private String telefono;
 	
 	
-	public Docente(int legajo, String nombre, String apellido, String email, int telefono) {
+	public Docente(String legajo, String nombre, String apellido, String email, String telefono) {
 		super();
 		this.legajo = legajo;
 		this.nombre = nombre;
@@ -16,10 +16,10 @@ public class Docente {
 		this.email = email;
 		this.telefono = telefono;
 	}
-	public int getLegajo() {
+	public String getLegajo() {
 		return legajo;
 	}
-	public void setLegajo(int legajo) {
+	public void setLegajo(String legajo) {
 		this.legajo = legajo;
 	}
 	public String getNombre() {
@@ -40,10 +40,10 @@ public class Docente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 }
