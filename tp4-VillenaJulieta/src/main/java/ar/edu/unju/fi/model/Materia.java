@@ -1,16 +1,16 @@
 package ar.edu.unju.fi.model;
 
 public class Materia {
-	private int codigo;
+	private String codigo;
 	private String nombre;
 	private String curso;
-	private int cant_horas;
-	private boolean modalidad;
+	private Integer cant_horas;
+	private Boolean modalidad;
 	private String docente;
 	private String carrera;
 	
 	
-	public Materia(int codigo, String nombre, String curso, int cant_horas, boolean modalidad, String docente,
+	public Materia(String codigo, String nombre, String curso, Integer cant_horas, Boolean modalidad, String docente,
 			String carrera) {
 		super();
 		this.codigo = codigo;
@@ -21,10 +21,10 @@ public class Materia {
 		this.docente = docente;
 		this.carrera = carrera;
 	}
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombre() {
@@ -39,16 +39,16 @@ public class Materia {
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-	public int getCant_horas() {
+	public Integer getCant_horas() {
 		return cant_horas;
 	}
-	public void setCant_horas(int cant_horas) {
+	public void setCant_horas(Integer cant_horas) {
 		this.cant_horas = cant_horas;
 	}
-	public boolean isModalidad() {
+	public Boolean isModalidad() {
 		return modalidad;
 	}
-	public void setModalidad(boolean modalidad) {
+	public void setModalidad(Boolean modalidad) {
 		this.modalidad = modalidad;
 	}
 	public String getDocente() {

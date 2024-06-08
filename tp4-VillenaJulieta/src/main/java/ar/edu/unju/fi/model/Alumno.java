@@ -3,18 +3,18 @@ package ar.edu.unju.fi.model;
 import java.util.Calendar;
 
 public class Alumno {
-	private int dni;
+	private String dni;
 	private String nombre;
 	private String apellido;
 	private String email;
-	private int telefono;
+	private String telefono;
 	private Calendar fechadenacimiento;
 	private String domicilio;
-	private int lu;
+	private String lu;
 	
 	
-	public Alumno(int dni, String nombre, String apellido, String email, int telefono, Calendar fechadenacimiento,
-			String domicilio, int lu) {
+	public Alumno(String dni, String nombre, String apellido, String email, String telefono, Calendar fechadenacimiento,
+			String domicilio, String lu) {
 		super();
 		this.dni = dni;
 		this.nombre = nombre;
@@ -25,10 +25,10 @@ public class Alumno {
 		this.domicilio = domicilio;
 		this.lu = lu;
 	}
-	public int getDni() {
+	public String getDni() {
 		return dni;
 	}
-	public void setDni(int dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
 	public String getNombre() {
@@ -49,10 +49,10 @@ public class Alumno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 	public Calendar getFechadenacimiento() {
@@ -67,10 +67,10 @@ public class Alumno {
 	public void setDomicilio(String domicilio) {
 		this.domicilio = domicilio;
 	}
-	public int getLu() {
+	public String getLu() {
 		return lu;
 	}
-	public void setLu(int lu) {
+	public void setLu(String lu) {
 		this.lu = lu;
 	}
 	
