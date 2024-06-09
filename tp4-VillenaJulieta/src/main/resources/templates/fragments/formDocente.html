@@ -8,5 +8,26 @@
 </head>
 <body>
 
+<div class="container">
+<h1>FORMULARIO CARRERA</h1>
+<form data-th-object="${nuevaCarrera}">
+  <div class="mb-3">
+    <label for="codigo" class="form-label">Código</label>
+    <input type="text" class="form-control" id="codigo">
+  </div>
+  <div class="mb-3">
+    <label for="nombrecarrera" class="form-label">Nombre Carrera</label>
+    <input type="text" class="form-control" id="nombrecarrera">
+  </div>
+  <div class="mb-3">
+    <label for="anios" class="form-label">Cantidad de Años</label>
+    <input type="number" class="form-control" id="anios">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Guardar Carrera</button>
+</form>
+</div>
+
+<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

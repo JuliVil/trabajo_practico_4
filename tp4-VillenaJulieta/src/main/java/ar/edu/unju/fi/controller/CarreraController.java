@@ -13,7 +13,7 @@ public class CarreraController {
 	@GetMapping("/formularioCarrera")
 	public ModelAndView getFormCarrera() {
 		ModelAndView modelView = new ModelAndView("formCarrera");
-		modelView.addObject(new Carrera());
+		modelView.addObject("nuevaCarrera", new Carrera());
 				
 		return modelView;
 	}
