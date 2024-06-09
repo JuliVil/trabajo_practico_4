@@ -9,11 +9,11 @@
 <body>
 
 <div class="container">
-<h1>FORMULARIO DOCENTE</h1>
-<form data-th-object="${nuevoDocente}">
+<h1>FORMULARIO ALUMNO</h1>
+<form data-th-object="${nuevoAlumno}">
   <div class="mb-3">
-    <label for="legajo" class="form-label">Legajo</label>
-    <input type="text" class="form-control" id="legajo">
+    <label for="dni" class="form-label">DNI</label>
+    <input type="text" class="form-control" id="dni">
   </div>
   <div class="mb-3">
     <label for="nombre" class="form-label">Nombre</label>
@@ -30,6 +30,18 @@
    <div class="mb-3">
     <label for="telefono" class="form-label">Telefono</label>
     <input type="number" class="form-control" id="telefono">
+  </div>
+ <div class="mb-3">
+    <label for="fechanacimiento" class="form-label">Fecha de Nacimiento</label>
+    <input type="date" class="form-control" id="fechadenacimiento">
+  </div>
+  <div class="mb-3">
+    <label for="domicilio" class="form-label">Domicilio</label>
+    <input type="text" class="form-control" id="domicilio">
+  </div>
+  <div class="mb-3">
+    <label for="lu" class="form-label">Libreta Universitaria</label>
+    <input type="text" class="form-control" id="lu">
   </div>
  
   <button type="submit" class="btn btn-primary">Guardar Carrera</button>

@@ -14,7 +14,7 @@ public class DocenteController {
 	@GetMapping("/formularioDocente")
 	public ModelAndView getFormDocente() {
 		ModelAndView modelView = new ModelAndView("formDocente");
-		modelView.addObject(new Docente());
+		modelView.addObject("nuevoDocente", new Docente());
 		
 		ListadoDocentes.agregarDocente(new Docente());
 		return modelView;
