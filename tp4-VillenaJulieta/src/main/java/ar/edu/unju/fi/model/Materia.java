@@ -9,10 +9,11 @@ public class Materia {
 	private String docente;
 	private String carrera;
 	
-	
+	public Materia() {
+		// TODO Auto-generated constructor stub
+	}
 	public Materia(String codigo, String nombre, String curso, Integer cant_horas, Boolean modalidad, String docente,
 			String carrera) {
-		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.curso = curso;

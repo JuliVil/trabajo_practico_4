@@ -7,9 +7,10 @@ public class Docente {
 	private String email;
 	private String telefono;
 	
-	
+	public Docente() {
+		// TODO Auto-generated constructor stub
+	}
 	public Docente(String legajo, String nombre, String apellido, String email, String telefono) {
-		super();
 		this.legajo = legajo;
 		this.nombre = nombre;
 		this.apellido = apellido;
