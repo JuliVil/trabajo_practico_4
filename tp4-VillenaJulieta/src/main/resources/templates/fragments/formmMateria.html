@@ -9,41 +9,50 @@
 <body>
 
 <div class="container">
+<header data-th-replace="~{fragments/header :: header}"></header>
 <h1>FORMULARIO MATERIA</h1>
-<form data-th-object="${nuevaMateria}">
+<form data-th-object="${nuevaMateria}" data-th-action="${flag}?@{/modificarMateria}:@{/guardarMateria}" method="post" class="p-2">
   <div class="mb-3">
     <label for="codigo" class="form-label">Codigo</label>
-    <input type="text" class="form-control" id="codigo">
+    <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" data-th-readonly="${flag}" required>
   </div>
   <div class="mb-3">
     <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="nombre">
+    <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}" required>
   </div>
    <div class="mb-3">
     <label for="curso" class="form-label">Curso</label>
-    <input type="text" class="form-control" id="curso">
+    <input type="text" class="form-control" id="curso" data-th-field="*{curso}" required>
   </div>
   <div class="mb-3">
     <label for="canthoras" class="form-label">Cantidad de Horas</label>
-    <input type="number" class="form-control" id="canthoras">
+    <input type="number" class="form-control" id="canthoras" data-th-field="*{cant_horas}">
   </div>
    <div class="mb-3">
     <label for="modalidad" class="form-label">Modalidad</label>
-    <input type="text" class="form-control" id="modalidad">
+    <input type="text" class="form-control" id="modalidad" data-th-field="*{modalidad}">
   </div>
  <div class="mb-3">
     <label for="docente" class="form-label">Docente</label>
-    <input type="text" class="form-control" id="docente">
+	<select id="docente" data-th-field="*{docente.legajo}" class="form-select bg-dark text-white" required>
+				<option value="">Seleccionar Docente</option>
+				<option data-th-each="d:${listadoDocente}" data-th-value="${d.legajo}" data-th-text="${d.apellido}"></option>
+	</select>
   </div>
   <div class="mb-3">
     <label for="carrera" class="form-label">Carrera</label>
-    <input type="text" class="form-control" id="carrera">
+    <select id="carrera" data-th-field="*{carrera.codigo}" class="form-select bg-dark text-white" required>
+				<option value="">Seleccionar Carrera</option>
+				<option data-th-each="c:${listadoCarrera}" data-th-value="${c.codigo}" data-th-text="${c.nombre}"></option>
+	</select>
   </div>
  
   <button type="submit" class="btn btn-primary">Guardar Carrera</button>
 </form>
 </div>
-
+<footer>
+		<div data-th-replace="~{fragments/footer::footer}"></div>
+	</footer>
 <script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 package ar.edu.unju.fi.model;
-
+import org.springframework.stereotype.Component;
 import java.util.Calendar;
 
+@Component
 public class Alumno {
 	private String dni;
 	private String nombre;

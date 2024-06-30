@@ -14,16 +14,16 @@ public class ListadoDocentes {
 			}
 			//metodo para buscar un docente por id	
 			public static Docente buscarDocentePorLegajo(String legajo) {
-				for (Docente d : docentes) {
-					if(d.getLegajo().equals(legajo)) {
-						return d;
+				for (Docente docente : docentes) {
+					if(docente.getLegajo().equals(legajo)) {
+						return docente;
 					}
 				}
 				return null;
 			}
 			//metodo para agregar docente
-			public static void agregarDocente (Docente d) {
-				docentes.add(d);
+			public static void agregarDocente (Docente docente) {
+				docentes.add(docente);
 			}
 			//metodo para modificar un docente
 			public static void modificarDocente (Docente docenteModificado) {

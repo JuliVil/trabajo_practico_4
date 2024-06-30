@@ -1,10 +1,13 @@
 package ar.edu.unju.fi.model;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Carrera {
 	private String codigo;
 	private String nombre;
 	private Integer cant_anios;
 	private Boolean estado;
+	
 	
 
 	public Carrera(String codigo, String nombre, Integer cant_anios, Boolean estado) {

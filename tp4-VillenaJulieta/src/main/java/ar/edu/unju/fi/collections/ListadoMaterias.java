@@ -14,16 +14,16 @@ public class ListadoMaterias {
 			}
 			//metodo para buscar una materia por id	
 			public static Materia buscarMateriaPorCodigo(String codigo) {
-				for (Materia m : materias) {
-					if(m.getCodigo().equals(codigo)) {
-						return m;
+				for (Materia materia : materias) {
+					if(materia.getCodigo().equals(codigo)) {
+						return materia;
 					}
 				}
 				return null;
 			}
 			//metodo para agregar una materia
-			public static void agregarMateria (Materia m) {
-				materias.add(m);
+			public static void agregarMateria (Materia materia) {
+				materias.add(materia);
 			}
 			//metodo para modificar una materia
 			public static void modificarMateria (Materia materiaModificada) {
