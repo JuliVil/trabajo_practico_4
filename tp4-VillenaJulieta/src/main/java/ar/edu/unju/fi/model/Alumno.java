@@ -1,7 +1,8 @@
 package ar.edu.unju.fi.model;
-
+import org.springframework.stereotype.Component;
 import java.util.Calendar;
 
+@Component
 public class Alumno {
 	private String dni;
 	private String nombre;
@@ -12,10 +13,11 @@ public class Alumno {
 	private String domicilio;
 	private String lu;
 	
-	
+	public Alumno() {
+		// TODO Auto-generated constructor stub
+	}
 	public Alumno(String dni, String nombre, String apellido, String email, String telefono, Calendar fechadenacimiento,
 			String domicilio, String lu) {
-		super();
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;

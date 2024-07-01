@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.model;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Docente {
 	private String legajo;
 	private String nombre;
@@ -7,9 +9,10 @@ public class Docente {
 	private String email;
 	private String telefono;
 	
-	
+	public Docente() {
+		// TODO Auto-generated constructor stub
+	}
 	public Docente(String legajo, String nombre, String apellido, String email, String telefono) {
-		super();
 		this.legajo = legajo;
 		this.nombre = nombre;
 		this.apellido = apellido;
